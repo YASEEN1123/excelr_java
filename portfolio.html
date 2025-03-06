@@ -1,0 +1,451 @@
+ <!DOCTYPE html>
+ <html>
+   <head>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <style>
+         *{
+            margin: 0;
+         }
+         .first{
+            display: flex;
+            flex-direction: row;
+            justify-content:space-between;
+            align-items: center;
+          }
+         .first_left img{
+            width: 44px;
+            border-radius: 50%;
+            
+         }
+         .first_left{
+            display: flex;
+            padding: 5px;
+             width: 50%;
+             gap: 5px;
+             align-items: center;
+
+         }
+         .first_right{
+            display: flex;
+             width: 50%;
+            justify-content: space-around;
+
+         }
+         .first_right a{
+            text-decoration: none;
+            color: black;
+            font-size: larger;
+            font-weight: bolder;
+         }
+         .second{
+            background-color: rgb(149, 83, 211);
+            display: flex;
+            margin-top: 10px;
+            width: 100%;
+             height: 590px;
+         }
+         .sidebar{
+            width: 20%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+         }
+         .sidemenu{
+            display: flex;
+            flex-direction: column;
+            
+            
+         }
+         .sidemenu i{
+            border: 1px solid white;
+            padding: 17px;
+            color: white;
+            font-weight: bolder;
+            font-size: x-large;
+
+         }
+         .mainbar{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            color: white;
+            align-items: center;
+            padding: 5px;
+         }
+         .mainbar h1{
+            font-size: 55px;
+         }
+         .mainbar_2{
+            font-size: larger;
+         }
+         .mainbar_button{
+             background-color: white;
+             color: black;
+             padding: 15px 39px;
+             border-radius: 10px;
+             font-weight: bold;
+             
+         }
+         .third{
+            margin-top: 29px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            gap: 15px;
+            text-align: center;
+         }
+         .third h1{
+            font-size: xx-large;
+         }
+         .third p{
+            font-size: 20px;
+            color: rgb(56, 155, 122);
+         }
+         .fourth{
+            display: flex;
+             margin-top: 35px;
+            align-items: center;
+            padding: 9%;
+            color: rgb(56, 155, 122);
+            background-color: whitesmoke;
+          }
+          @media screen and (max-width:700px){
+            .fourth{
+               display: flex;
+               flex-direction: column;
+               
+            }
+             
+            
+             
+            
+            
+          }
+          
+         .fourth_left, .fourth_right{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: ;
+            width: 48%;
+            line-height: 26px;
+            gap: 17px;
+            padding: 9px;
+         }
+         .fourth_left button{
+            width: 39%;
+            color: white;
+            background-color:blue;
+            padding: 13px;
+            border-radius: 5px;
+            border: none;
+            font-weight: bold;
+             
+         }
+         .fourth_right_1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+         }
+         .fourth_right_1 p{
+            background-color: aqua;
+            border-radius: 8px;
+            padding: 13px;
+            gap: 5px;
+            line-height: 10px;
+            color:rgb(100, 36, 36);
+            background-color:  rgb(244, 219, 219);
+            height: 20px;
+            text-align: center;
+         }
+         .fourth h1{
+            color: black;
+         }
+         .first_right{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 14px;
+         }
+         .fourth_left{
+            font-size: large;
+         }
+         .fifth{
+            display: flex;
+          height: 120px;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 12px;
+            gap: 5px;
+            background-color: rgb(255, 231, 231);
+         }
+         .sixth{
+            display: flex;
+              
+            
+
+         }
+         @media screen and (max-width:700px) {
+            .sixth{
+            display: flex;
+            
+            flex-direction: column;
+             
+            
+
+         }
+         .sixthright{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            gap: 10px;
+         }
+            
+         }
+         .sixthleft{
+            width: 100%;
+         }
+         .sixthleft img{
+            width: 100%;
+          }
+         .sixthright{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+         }
+         .sixthright p{
+            font-size: larger;
+            color: rgb(58, 161, 127);
+
+         }
+         .sixthright button{
+            width: 25%;
+            background-color: blue;
+            color: white;
+            padding: 17px;
+            border: none;
+            border-radius: 10px;
+            font-weight: bold;
+         }
+         .seventh{
+            background-color: rgb(18, 171, 232);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            padding: 29px;
+            gap:29px;
+         }
+         form{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+             background-color: white;
+            padding: 47px;
+            width: 60%;
+            gap: 13px;
+            height: 440px;
+            border-radius: 10px;
+            
+
+         }
+         input, textarea{ 
+            background-color: rgb(236, 223, 223);
+            height: 39px;
+            padding: 9px;
+            border: none;
+            border-radius: 5px;
+         }
+         .seventh button{
+            width: 25%;
+             background-color: blue;
+             color: white;
+             padding: 14px;
+             border-radius: 11px;
+             border: none;
+             font-weight: bold;
+          }
+          .eight{
+            color: white;
+            background-color: black;
+            display: flex;
+            justify-content: space-around;
+          
+            
+            
+          }
+          .last{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            color: white;
+            padding: 19px;
+          }
+          .eight_rightsub {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 100%;
+             padding: 20px;
+             gap: 10px;
+             font-size: larger;
+          }
+          .eight{
+            display: flex;
+            padding: 49px;
+           
+          }
+          .eight_right p{
+            font-weight: bold;
+            font-size: x-large;
+          }
+           
+      </style>
+   </head>
+   <body>
+      <div class="first">
+         <div class="first_left">
+            <img src="PASSPORT_IMAGE_YASEEN (2) (1).jpg" alt="">
+            <h1>EXCELR</h1>
+         </div>
+         <div class="first_right">
+            <a href="">HOME</a>
+            <a href="">ABOUT</a>
+            <a href="">PROJECTS</a>
+            <a href="">CONTACT</a>
+         </div>
+      </div>
+      <div class="second">
+         <div class="sidebar">
+            <div class="sidemenu">
+               <i class="fa fa-linkedin" aria-hidden="true"></i>
+               <i class="fa fa-github" aria-hidden="true"></i>
+               <i class="fa fa-twitter" aria-hidden="true"></i> 
+               <i class="fa fa-youtube" aria-hidden="true"></i>
+               <i class="fa fa-instagram" aria-hidden="true"></i>
+
+            </div>
+         </div>
+         <div class="mainbar">
+            <div class="mainbar_1">
+               <h1>Hey, My name is Shaik Yaseen </h1>
+           </div>
+           <div class="mainbar_2">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis tempora explicabo quae quod deserunt eius sapiente solutions for complex problems            </p>
+           </div>
+           <div class="mainbar_button">PROJECT</div>
+         </div>
+      </div>
+      <div class="third">
+         <h1>ABOUT ME</h1>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis tempora explicabo quae quod deserunt eius sapiente</p>
+      </div>
+      <div class="fourth">
+         <div class="fourth_left">
+            <h1>Get to know me!</h1>
+            <p>Hey! It's John Doe and I'm a Frontend Web Developer located in Los Angeles. I've done remote projects for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use.</p>
+            <p>I'm a bit of a digital product junky. Over the years, I've used hundreds of web and mobile apps in different industries and verticals. Feel free to contact me here.</p>
+            <button>CONTACT</button>
+         </div>
+         <div class="fourth_right">
+            <h1>My Skills</h1>
+            <div class="fourth_right_1">
+               <p>HTML</p>
+               <P>CSS</P>
+               <P>My Skills</P>
+               <P>BOOTSTRAP</P>
+            </div>
+            <div class="fourth_right_1">
+               <p>N</p>
+               <P>GIT</P>
+               <P>Shopify</P>
+               <P>Wordpress</P>
+            </div>
+            <div class="fourth_right_1">
+               <p>Facebook Ads</p>
+               <P>Android</P>
+               <P>IOS</P>
+            </div>
+         </div>
+      </div>
+      <div class="fifth">
+          <h1>PROJECTS</h1>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis tempora explicabo quae quod deserunt eius sapiente</p>
+      </div>
+      <div class="sixth">
+         <div class="sixthleft">
+            <img src="laptop_image.jpeg" alt="">
+         </div>
+         <div class="sixthright">
+            <h1>Project 1 </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis tempora, explicabo quae quod deserunt eius sapiente praesentium.            </p>
+            <button>CASE STUDY</button>
+         </div>
+      </div>
+      <div class="sixth">
+         <div class="sixthleft">
+            <img src="laptop_image.jpeg" alt="">
+         </div>
+         <div class="sixthright">
+            <h1>Project 2 </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis tempora, explicabo quae quod deserunt eius sapiente praesentium.            </p>
+            <button>CASE STUDY</button>
+         </div>
+      </div>
+      <div class="sixth">
+         <div class="sixthleft">
+            <img src="laptop_image.jpeg" alt="">
+         </div>
+         <div class="sixthright">
+            <h1>Project 3 </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis tempora, explicabo quae quod deserunt eius sapiente praesentium.            </p>
+            <button>CASE STUDY</button>
+         </div>
+      </div>
+      <div class="seventh">
+         <h1>CONTACT</h1>
+         <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis tempora explicabo quae quod deserunt eius sapiente         </P>
+         <form action="">
+            <label for="">Name</label>
+            <input type="text" placeholder="Enter Your Name">
+            <label for="">Email</label>
+            <input type="email" placeholder="Enter Your Email">
+            <label for="">Message</label>
+            <textarea name="" id="">Enter Your Message</textarea>
+            <button>submit</button>
+         </form>
+
+      </div>
+      <div class="eight">
+         <div class="eight_left">
+            <h1>John Doe</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit facilis tempora explicabo quae quod deserunt </p>
+         </div>
+         <div class="eight_right">
+            <p>Social</p>
+            <div class="eight_rightsub">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                <i class="fa fa-github" aria-hidden="true"></i>
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+                <i class="fa fa-youtube" aria-hidden="true"></i>
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+            </div>
+         </div>
+         
+      </div>
+      <div class="horizontal">
+         <hr>
+      </div>
+      <div class="last">
+          
+      <p>© Copyright 2021. Made by Ram Maheshwari</p>
+      </div>
+      
+   </body>
+ </html>
